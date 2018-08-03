@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.simplexo.alaamchannel.MainActivity">
+    <item
+        android:id="@+id/action_add"
+        android:orderInCategory="100"
+        android:title="اضافه"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_connect"
+        android:orderInCategory="101"
+        android:title="تواصل معنا"
+        app:showAsAction="never"
+        >
+    </item>
+</menu>

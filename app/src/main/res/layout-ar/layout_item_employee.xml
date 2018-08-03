@@ -1,0 +1,58 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:weightSum="1">
+
+    <FrameLayout
+        android:layout_width="96dp"
+        android:layout_height="102dp">
+
+        <ImageView
+            android:id="@+id/imgV_employeeImage_ItemEmployee"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/ic_launcher" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="285dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="207dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name_EmplyeeItem"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="name"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/tv_job_EmployeeItem"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/imgBtn_callEmployee"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/icon_call_small" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

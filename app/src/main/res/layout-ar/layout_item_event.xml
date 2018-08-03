@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_date_itemEvent"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textAlignment="textEnd" />
+
+    <TextView
+        android:id="@+id/tv_family_itemEvent"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/tv_date_itemEvent"
+        android:text="family"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView_itemEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="240dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_date_itemEvent"
+        android:layout_marginTop="18dp"
+       />
+
+    <TextView
+        android:id="@+id/tv_itemEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView_itemEvent"
+
+        android:layout_marginTop="13dp"
+        android:text="TextView"
+        android:textAlignment="textEnd"
+        android:textStyle="bold" />
+
+</RelativeLayout>

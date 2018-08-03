@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.simplexo.alaamchannel.AddEmployeeActivity">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView_addEmployee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-9502802921397120/3645712109" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adView_addEmployee"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButton_addEmployeeFragment"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_above="@+id/et_name_AddEmployeeFragment"
+                android:layout_alignEnd="@+id/et_name_AddEmployeeFragment"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/et_name_AddEmployeeFragment"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <EditText
+                android:id="@+id/et_name_AddEmployeeFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/et_job_AddEmployeeFragment"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="39dp"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:hint="   اسم الموظف"
+                android:inputType="textPersonName"
+                android:textColorHint="#5fa6ca" />
+
+            <EditText
+                android:id="@+id/et_job_AddEmployeeFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/et_phone_AddEmployeeFragment"
+                android:layout_alignStart="@+id/et_phone_AddEmployeeFragment"
+                android:layout_marginBottom="48dp"
+                android:background="@drawable/edittext_background"
+
+                android:ems="10"
+                android:hint="   المهنه "
+                android:inputType="textPersonName"
+                android:textColorHint="#5fa6ca" />
+
+            <EditText
+                android:id="@+id/place_addEmployeeFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btn_addEmployee_Fragment"
+                android:layout_alignStart="@+id/et_phone_AddEmployeeFragment"
+                android:layout_marginBottom="44dp"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:hint="   مكانه"
+                android:inputType="textPersonName"
+                android:textColorHint="#5fa6ca" />
+
+            <EditText
+                android:id="@+id/et_phone_AddEmployeeFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/place_addEmployeeFragment"
+                android:layout_alignStart="@+id/et_name_AddEmployeeFragment"
+                android:layout_marginBottom="29dp"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:hint="   رقم المحمول "
+                android:inputType="phone"
+                android:textColorHint="#5fa6ca" />
+
+            <Button
+                android:id="@+id/btn_addEmployee_Fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/adView_addEmployee"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/input_background"
+                android:text="اضف الموظف"
+                android:textColor="#ece002" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

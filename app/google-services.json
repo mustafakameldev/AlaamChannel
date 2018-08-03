@@ -1,0 +1,135 @@
+{
+  "project_info": {
+    "project_number": "108588179676",
+    "firebase_url": "https://munasabat-886cb.firebaseio.com",
+    "project_id": "munasabat-886cb",
+    "storage_bucket": "munasabat-886cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:108588179676:android:2335c396a5c2e8ce",
+        "android_client_info": {
+          "package_name": "com.mostafakamel.events"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "108588179676-89g6rot2n8s06ej5i3pkh7i6atngr1mj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBR7FxofpqzPTM0g2zWuJqKfYdZJ_gijvo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:108588179676:android:7c735c4fb9ab1929",
+        "android_client_info": {
+          "package_name": "com.mostafakamel.munasabat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "108588179676-89g6rot2n8s06ej5i3pkh7i6atngr1mj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBR7FxofpqzPTM0g2zWuJqKfYdZJ_gijvo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:108588179676:android:80cdfdf1552e8911",
+        "android_client_info": {
+          "package_name": "com.mostafakamel.munasabatkharfa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "108588179676-89g6rot2n8s06ej5i3pkh7i6atngr1mj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBR7FxofpqzPTM0g2zWuJqKfYdZJ_gijvo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:108588179676:android:752fabed7069fb29",
+        "android_client_info": {
+          "package_name": "com.simplexo.alaamchannel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "108588179676-89g6rot2n8s06ej5i3pkh7i6atngr1mj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBR7FxofpqzPTM0g2zWuJqKfYdZJ_gijvo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

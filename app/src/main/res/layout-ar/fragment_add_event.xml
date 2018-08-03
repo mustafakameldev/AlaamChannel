@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/imageButton_AddEventFragment"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/image_icon" />
+
+            <EditText
+                android:id="@+id/et_writeFamily_Fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/imageButton_AddEventFragment"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:hint="العائله"
+                android:inputType="textPersonName"
+                android:textColorHint="#5fa6ca" />
+
+            <EditText
+                android:id="@+id/et_writeEvent_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/et_date_AddEvent"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:hint="اكتب المناسبه..."
+                android:inputType="textMultiLine"
+                android:textColorHint="#5fa6ca" />
+
+            <EditText
+                android:id="@+id/et_date_AddEvent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/et_writeFamily_Fragment"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+
+                android:hint="اضف الميعاد"
+                android:inputType="textPersonName"
+                android:textColorHint="#5fa6ca" />
+
+            <Button
+                android:id="@+id/btn_addEvent_Fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/et_writeEvent_fragment"
+                android:layout_below="@+id/et_writeEvent_fragment"
+                android:layout_marginBottom="70dp"
+                android:background="@drawable/input_background"
+                android:text="اضف المناسبه"
+                android:textColor="#c9dc20" />
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView_addevent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9502802921397120/7189371298"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

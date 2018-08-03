@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/frameLayout">
+
+        <ImageView
+            android:id="@+id/imgV_WorkerActivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/image_icon" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_call_WorkerActivity"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/frameLayout"
+        android:background="@drawable/call_icon" />
+
+    <TextView
+        android:id="@+id/tv_name_WorkerActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/frameLayout"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_toStartOf="@+id/btn_call_WorkerActivity"
+        android:text="اسم العامل"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/tv_job_WorkerActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_name_WorkerActivity"
+        android:layout_below="@+id/btn_call_WorkerActivity"
+        android:paddingRight="10dp"
+        android:text="المهنه"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+    <TextView
+        android:id="@+id/tv_phone_WorkerActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_job_WorkerActivity"
+        android:layout_below="@+id/tv_job_WorkerActivity"
+        android:layout_marginTop="31dp"
+        android:paddingRight="10dp"
+        android:text="رقم الهاتف"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+    <TextView
+        android:id="@+id/tv_place_WorkerActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_phone_WorkerActivity"
+        android:layout_below="@+id/tv_phone_WorkerActivity"
+        android:layout_marginTop="30dp"
+        android:paddingRight="10dp"
+        android:text="مكانه"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+</RelativeLayout>

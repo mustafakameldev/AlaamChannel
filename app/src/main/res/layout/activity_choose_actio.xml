@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.simplexo.alaamchannel.ChooseActioActivity"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_choose_actio"
+    >
+
+    <Button
+        android:id="@+id/btn_news_ChooseActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="اضافه خبر"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/btn_employee_ChooseActivity"
+        android:layout_alignStart="@+id/btn_employee_ChooseActivity"
+        android:layout_marginTop="114dp"
+        android:stateListAnimator="@null"
+        android:background="@drawable/input_background"
+        android:textColor="#c9be5e"
+        />
+
+    <Button
+        android:id="@+id/btn_events_ChooseActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="اضافه مناسبه"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/btn_news_ChooseActivity"
+        android:layout_alignLeft="@+id/btn_news_ChooseActivity"
+        android:layout_alignStart="@+id/btn_news_ChooseActivity"
+        android:stateListAnimator="@null"
+        android:background="@drawable/input_background"
+        android:textColor="#cece61"
+        />
+
+    <Button
+        android:id="@+id/btn_employee_ChooseActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="اضافه عامل"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/btn_events_ChooseActivity"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/input_background"
+        android:textColor="#dacb73"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_container"
+        />
+
+    <Button
+        android:id="@+id/btn_removeNews_ChooseActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="380dp"
+        android:layout_below="@+id/btn_events_ChooseActivity"
+        android:background="@drawable/input_background"
+        android:textColor="#dcc853"
+        android:text="حذف خبر" />
+
+    <Button
+        android:id="@+id/btn_removeEvent_ChooseActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="380dp"
+        android:background="@drawable/input_background"
+        android:textColor="#dcc853"
+        android:text="حذف مناسبه" />
+    <Button
+        android:id="@+id/btn_removeEmployee_ChooseActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="380dp"
+        android:background="@drawable/input_background"
+        android:textColor="#dcc853"
+        android:text="حذف عامل" />
+
+</RelativeLayout>

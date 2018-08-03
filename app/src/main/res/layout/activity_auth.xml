@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.simplexo.alaamchannel.AuthActivity">
+
+    <EditText
+        android:id="@+id/editText_email_AuthAcivity"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="41dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="    ادخل البريد الالكتروني"
+        android:inputType="textPersonName"
+        android:textColorHint="#5fa6ca"
+
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editText_password_AuthActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignStart="@+id/editText_email_AuthAcivity"
+        android:layout_below="@+id/editText_email_AuthAcivity"
+        android:layout_marginTop="58dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+
+        android:hint="   ادخل كلمة السر"
+        android:inputType="textPassword"
+        android:textColorHint="#5fa6ca" />
+
+    <Button
+        android:id="@+id/btn_AuthActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText_password_AuthActivity"
+        android:layout_below="@+id/editText_password_AuthActivity"
+        android:layout_marginEnd="61dp"
+        android:layout_marginTop="54dp"
+        android:text="تسجيل دخول"
+        android:textColor="#dcce0a"
+        android:background="@drawable/input_background"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="79dp"
+        android:text="هذه الجزئية خاصه بالقائمين علي التطبيق"
+        android:id="@+id/textView2"
+        android:textColor="#217cab"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editText_email_AuthAcivity" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:textColor="#2577a1"
+        android:text="شكرا لتفهمكم"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
