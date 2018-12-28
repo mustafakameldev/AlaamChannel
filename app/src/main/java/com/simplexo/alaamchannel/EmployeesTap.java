@@ -160,7 +160,7 @@ public class EmployeesTap extends android.support.v4.app.Fragment implements Tex
             name.setText(getItem(position).getName());
             job.setText(getItem(position).getJob());
             final String datasnapShot = getItem(position).getDatasnapshot();
-            Picasso.with(getContext()).load(getItem(position).getImage()).into(img);
+           // Picasso.with(getContext()).load(getItem(position).getImage()).into(img);
             imgBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

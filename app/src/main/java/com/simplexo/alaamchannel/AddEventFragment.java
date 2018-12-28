@@ -1,5 +1,4 @@
 package com.simplexo.alaamchannel;
-
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -32,7 +31,6 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 import static android.app.Activity.RESULT_OK;
-
 public class AddEventFragment extends Fragment implements View.OnClickListener {
     private OnFragmentInteractionListener mListener;
     private Button btn_addEvent ;
@@ -59,15 +57,13 @@ public class AddEventFragment extends Fragment implements View.OnClickListener {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-
         }
     }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-      View view =  inflater.inflate(R.layout.fragment_add_event, container, false);
+        View view =  inflater.inflate(R.layout.fragment_add_event, container, false);
         btn_addEvent=(Button)view.findViewById(R.id.btn_addEvent_Fragment) ;
         et_event= (EditText)view.findViewById(R.id.et_writeEvent_fragment);
         et_family =(EditText)view.findViewById(R.id.et_writeFamily_Fragment) ;
@@ -76,13 +72,10 @@ public class AddEventFragment extends Fragment implements View.OnClickListener {
         et_date = (EditText)view.findViewById(R.id.et_date_AddEvent);
         et_family.requestFocus() ;
         btn_addEvent.setOnClickListener(this);
-
-
         MobileAds.initialize(getContext(),"ca-app-pub-9502802921397120~4573557064");
         mAdView = view.findViewById(R.id.adView_addevent);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
-
         mainRef = FirebaseDatabase.getInstance().getReference().child("channel").child("events");
         numRef =mainRef.child("eventNo");
         progressDialog = new ProgressDialog(getContext());
@@ -120,23 +113,17 @@ public class AddEventFragment extends Fragment implements View.OnClickListener {
         super.onDetach();
         mListener = null;
     }
-
     @Override
     public void onClick(View v) {
         if(v== btn_addEvent)
         {
-
-
            final String familyStr =et_family.getText().toString() ;
            final String eventStr = et_event.getText().toString() ;
             final String dateStr = et_date.getText().toString() ;
             progressDialog.setMessage("جاري التحميل ...");
             progressDialog.show();
           if(!TextUtils.isEmpty(familyStr)|| !TextUtils.isEmpty(eventStr) || imageUri ==null || TextUtils.isEmpty(dateStr)) {
-
-
               StorageReference pushImage = mainStorageRef.child("Image").child(imageUri.getLastPathSegment());
-
               pushImage.putFile(imageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                   @Override
                   public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
@@ -146,7 +133,7 @@ public class AddEventFragment extends Fragment implements View.OnClickListener {
                       pushEvent.child("event").setValue(eventStr) ;
                       pushEvent.child("family").setValue(familyStr);
                       pushEvent.child("uploaddate").setValue(new SimpleDateFormat("yyyyMMdd_HHmmss")
-                              .format(Calendar.getInstance().getTime()));
+                               .format(Calendar.getInstance().getTime()));
                       pushEvent.child("date").setValue(dateStr);
                       Toast.makeText(getContext(), "تم اضافه المناسبه..", Toast.LENGTH_SHORT).show();
                       int newIndex = index +1 ;
@@ -158,11 +145,8 @@ public class AddEventFragment extends Fragment implements View.OnClickListener {
                       getActivity();
                   }
               });
-
-
           }else{
               Toast.makeText(getContext(),"تأكد من كتابة المناسبة اولا ..", Toast.LENGTH_SHORT).show();
-
           }
         }if(v== imgBtn)
         {
@@ -180,9 +164,8 @@ public class AddEventFragment extends Fragment implements View.OnClickListener {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode== GALLARY_REQUIST && resultCode == RESULT_OK)
         {
-            imageUri=data.getData() ;
+            imageUri=data.getData();
             imgBtn.setImageURI(imageUri);
         }
     }
-
 }

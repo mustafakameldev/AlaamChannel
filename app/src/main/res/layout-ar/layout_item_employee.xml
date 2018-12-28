@@ -1,6 +1,7 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="100dp"
     android:weightSum="1">
@@ -45,13 +46,14 @@
         <FrameLayout
             android:id="@+id/imgBtn_callEmployee"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+          >
             <ImageButton
                 android:id="@+id/imageButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@drawable/icon_call_small" />
+                app:srcCompat="@android:drawable/sym_call_outgoing" />
         </FrameLayout>
     </LinearLayout>
 

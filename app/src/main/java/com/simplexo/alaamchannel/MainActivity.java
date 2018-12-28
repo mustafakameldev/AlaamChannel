@@ -1,6 +1,8 @@
 package com.simplexo.alaamchannel;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -35,11 +37,21 @@ public class MainActivity extends AppCompatActivity {
 
             TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
             tabLayout.setupWithViewPager(mViewPager);
-            tabLayout.getTabAt(0).setIcon(R.drawable.news_icon);
-            tabLayout.getTabAt(1).setIcon(R.drawable.events_icon);
-            tabLayout.getTabAt(2).setIcon(R.drawable.jobs_icon);
+
+        SharedPreferences settings = getSharedPreferences("prefs", 0);
+        SharedPreferences pref = getSharedPreferences("ActivityPREF", Context.MODE_PRIVATE);
+        if(pref.getBoolean("activity_executed", false)){
+
+        }  else {
+            SharedPreferences.Editor ed = pref.edit();
+            ed.putBoolean("activity_executed", true);
+            ed.commit();
             startService(new Intent(MainActivity.this , NewsService.class));
-             startService(new Intent(MainActivity.this , EventsService.class));
+            startService(new Intent(MainActivity.this , EventsService.class));
+        }
+
+
+
     }
 
 

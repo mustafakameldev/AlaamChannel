@@ -51,7 +51,7 @@
                 android:id="@+id/imageButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@drawable/icon_call_small" />
+                app:srcCompat="@android:drawable/sym_call_outgoing" />
         </FrameLayout>
     </LinearLayout>
 
